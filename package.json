@@ -15,6 +15,7 @@
     "lucide-react": "^1.44.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
+    "react-gravatar": "^2.6.3",
     "react-hook-form": "^7.87.0",
     "react-redux": "^9.3.0",
     "react-router-dom": "^5.3.4",
