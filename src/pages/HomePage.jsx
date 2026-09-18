@@ -18,6 +18,12 @@ import b6 from "../assets/b6.jpg"
 import b7 from "../assets/b7.jpg"
 import b8 from "../assets/fixed-height.png"
 import grL from "../assets/grL.png"
+import unique from "../assets/universe.png"
+import post1 from "../assets/412d5bc5d51defa7e9522a5eb5f534d0442131b2.jpg"
+import post2 from "../assets/f1.jpg"
+import post3 from "../assets/f3.jpg"
+import Vector from "../assets/Vector.png"
+import coolicon from "../assets/Vector.png"
 
 
 const HomePage = () => {
@@ -435,108 +441,596 @@ const HomePage = () => {
             </div>
 
 
-            <div className="md:hidden">
+            <div className="md:hidden bg-[#23856D] h-[1000px]">
+                <Swiper
+                    className="h-full [&_.swiper-button-prev]:top-[450px] [&_.swiper-button-next]:top-[450px]"
+                    modules={[Navigation]}
+                    slidesPerView={1}
+                    navigation
+                >
+                    <SwiperSlide>
+                        <div className="relative w-full h-full bg-[#23856D] overflow-hidden">
+                            <div className="absolute top-[120px] left-1/2 -translate-x-1/2 w-full flex flex-col items-center text-center gap-6 z-20">
+                                <h4 className="text-[14px] font-bold text-white">
+                                    SUMMER 2020
+                                </h4>
+                                <h1 className="text-[36px] leading-[45px] max-w-[200px] font-bold text-white">
+                                    Vita Classic Product
+                                </h1>
+                                <p className="text-[14px] leading-[20px] max-w-[220px] text-white">
+                                    We know how large objects
+                                    will act, but things on a
+                                    small scale.
+                                </p>
+                                <p className="text-[20px] font-bold text-white">
+                                    $16.48
+                                </p>
+                                <Link
+                                    to="/shop"
+                                    className="bg-[#2DC071] text-white text-[14px] leading-[22px] font-bold px-8 py-3 w-fit rounded-md"
+                                >
+                                    ADD TO CART
+                                </Link>
+                            </div>
 
-    <Swiper
-        modules={[Navigation]}
-        slidesPerView={1}
-        navigation
-    >
+                            <img
+                                className="absolute -bottom-40 left-0 w-full h-auto object-bottom"
+                                src={grL}
+                                alt="Vita Classic Product"
+                            />
+                        </div>
+                    </SwiperSlide>
 
-        <SwiperSlide>
-            <div className="relative w-full h-[553px] bg-[#23856D] overflow-hidden">
+                    <SwiperSlide>
+                        <div className="relative w-full h-full bg-[#23856D] overflow-hidden">
+                            <div className="absolute top-[120px] left-1/2 -translate-x-1/2 w-full flex flex-col items-center text-center gap-6 z-20">
+                                <h4 className="text-[14px] font-bold text-white">
+                                    SUMMER 2020
+                                </h4>
+                                <h1 className="text-[36px] leading-[45px] max-w-[200px] font-bold text-white">
+                                    Vita Classic Product
+                                </h1>
+                                <p className="text-[14px] leading-[20px] max-w-[220px] text-white">
+                                    We know how large objects
+                                    will act, but things on a
+                                    small scale.
+                                </p>
+                                <p className="text-[20px] font-bold text-white">
+                                    $16.48
+                                </p>
+                                <Link
+                                    to="/shop"
+                                    className="bg-[#2DC071] text-white text-[14px] leading-[22px] font-bold px-8 py-3 w-fit rounded-md"
+                                >
+                                    ADD TO CART
+                                </Link>
+                            </div>
 
-                <div className="absolute top-[95px] left-1/2 -translate-x-1/2 w-full flex flex-col items-center text-center gap-4 z-20">
+                            <img
+                                className="absolute -bottom-40 left-0 w-full h-auto object-bottom"
+                                src={grL}
+                                alt="Vita Classic Product"
+                            />
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
+            </div>
 
-                    <h4 className="text-[11px] text-white">
+            <div className="hidden md:flex h-[682px]">
+
+                <div className="w-1/2 h-full">
+                    <img
+                        className="w-full h-full object-cover object-[center_-60px]"
+                        src={unique}
+                        alt="Unique Collection"
+                    />
+                </div>
+
+                <div className="w-1/2 flex flex-col justify-center items-start pl-20 gap-6">
+
+                    <h5 className="text-[#BDBDBD]">
                         SUMMER 2020
+                    </h5>
+
+                    <h2 className="text-[#252B42] text-4xl font-bold">
+                        Part of the Neural
+                        <br />
+                        Universe
+                    </h2>
+
+                    <h4 className="text-[#737373]">
+                        We know how large objects will act,
+                        <br />
+                        but things on a small scale.
                     </h4>
 
-                    <h1 className="text-[20px] leading-[25px] max-w-[200px] font-bold text-white">
-                        Vita Classic Product
-                    </h1>
+                    <div className="flex gap-3">
+                        <Link href="/shop" className="bg-[#2DC071] text-white px-6 py-3 rounded-md">
+                            BUY NOW
+                        </Link>
 
-                    <p className="text-[11px] leading-[16px] max-w-[190px] text-white">
-                        We know how large objects
-                        will act, but things on a
-                        small scale.
-                    </p>
+                        <Link href="/shop" className="text-[#2DC071] border border-[#2DC071] px-6 py-3 rounded-md">
+                            READ MORE
+                        </Link>
+                    </div>
 
-                    <div className="flex items-center gap-4">
+                </div>
 
-                        <p className="text-[14px] font-bold text-white">
-                            $16.48
-                        </p>
+            </div>
 
-                        <Link
-                            to="/shop"
-                            className="bg-[#2DC071] text-white text-[10px] leading-[22px] font-bold px-5 py-2 w-fit rounded-lg"
-                        >
-                            ADD TO CART
+
+            <div className="flex md:hidden flex-col h-[500px]">
+
+                <div className="w-full h-[250px] flex flex-col items-center text-center justify-center gap-4">
+
+                    <h5 className="text-[#BDBDBD] text-[10px]">
+                        SUMMER 2020
+                    </h5>
+
+                    <h2 className="text-[#252B42] text-[20px] leading-[24px] font-bold w-[220px]">
+                        Part of the Neural
+                        <br />
+                        Universe
+                    </h2>
+
+                    <h4 className="text-[#737373] text-[11px] leading-[16px] w-[190px]">
+                        We know how large
+                        <br />
+                        objects will act, but
+                        <br />
+                        things on a small scale.
+                    </h4>
+
+                    <div className="flex flex-col gap-3">
+
+                        <Link href="/shop" className="bg-[#23A6F0] text-white text-[9px] font-bold px-8 py-3 rounded-md">
+                            BUY NOW
+                        </Link>
+
+                        <Link href="/shop" className="text-[#23A6F0] border border-[#23A6F0] text-[9px] font-bold px-8 py-3 rounded-md">
+                            Learn More
                         </Link>
 
                     </div>
 
                 </div>
 
-                <img
-                    className="absolute z-0 bottom-0 left-1/2 -translate-x-1/2 w-[430px] max-w-none"
-                    src={grL}
-                    alt="Vita Classic Product"
-                />
+                <div className="w-full h-[250px] overflow-hidden">
+                    <img
+                        className="w-full h-full object-contain object-bottom"
+                        src={unique}
+                        alt="Unique Collection"
+                    />
+                </div>
 
             </div>
-        </SwiperSlide>
 
-        <SwiperSlide>
-            <div className="relative w-full h-[553px] bg-[#23856D] overflow-hidden">
 
-                <div className="absolute top-[95px] left-1/2 -translate-x-1/2 w-full flex flex-col items-center text-center gap-4 z-20">
 
-                    <h4 className="text-[11px] text-white">
-                        SUMMER 2020
-                    </h4>
+            <section className="hidden md:flex flex-col items-center py-20">
 
-                    <h1 className="text-[20px] leading-[25px] max-w-[200px] font-bold text-white">
-                        Vita Classic Product
-                    </h1>
+    <div className="flex flex-col items-center text-center gap-2 mb-10">
 
-                    <p className="text-[11px] leading-[16px] max-w-[190px] text-white">
-                        We know how large objects
-                        will act, but things on a
-                        small scale.
-                    </p>
+        <p className="text-[#23A6F0] text-[10px] font-bold">
+            Practice Advice
+        </p>
 
-                    <div className="flex items-center gap-4">
+        <h2 className="text-[#252B42] text-2xl font-bold">
+            Featured Posts
+        </h2>
 
-                        <p className="text-[14px] font-bold text-white">
-                            $16.48
-                        </p>
+        <p className="text-[#737373] text-[10px] max-w-[400px]">
+            Problems trying to resolve the conflict between
+            the two major realms of Classical physics: Newtonian mechanics
+        </p>
 
-                        <Link
-                            to="/shop"
-                            className="bg-[#2DC071] text-white text-[10px] leading-[22px] font-bold px-5 py-2 w-fit rounded-lg"
-                        >
-                            ADD TO CART
-                        </Link>
+    </div>
 
-                    </div>
+    <div className="flex gap-1">
+
+        <div className="w-[300px] border border-[#E8E8E8] shadow-sm">
+
+            <div className="relative h-[180px]">
+                <img
+                    src={post1}
+                    alt="Featured post"
+                    className="w-full h-full object-cover"
+                />
+
+                <span className="absolute top-3 left-3 bg-[#E74040] text-white text-[9px] font-bold px-2 py-1">
+                    NEW
+                </span>
+            </div>
+
+            <div className="flex flex-col gap-3 p-3">
+
+                <p className="text-[9px] text-[#8EC2F2]">
+                    Google&nbsp;&nbsp;&nbsp; Trending&nbsp;&nbsp;&nbsp; New
+                </p>
+
+                <h3 className="text-[#252B42] text-[13px] font-bold">
+                    Loudest à la Madison #1
+                    <br />
+                    (L'integral)
+                </h3>
+
+                <p className="text-[#737373] text-[9px] leading-4">
+                    We focus on ergonomics and meeting
+                    you where you work. It's only a
+                    keystroke away.
+                </p>
+
+                <div className="flex justify-between text-[8px] text-[#737373]">
+
+                    <span className="flex items-center gap-1">
+                        <img
+                            src={coolicon}
+                            alt=""
+                            className="w-[12px] h-[12px]"
+                        />
+                        22 April 2021
+                    </span>
+
+                    <span className="flex items-center gap-1">
+                        <img
+                            src={Vector}
+                            alt=""
+                            className="w-[12px] h-[12px]"
+                        />
+                        10 comments
+                    </span>
 
                 </div>
 
-                <img
-                    className="absolute z-0 bottom-0 left-1/2 -translate-x-1/2 w-[430px] max-w-none"
-                    src={grL}
-                    alt="Vita Classic Product"
-                />
+                <button className="text-[#737373] text-[9px] font-bold text-left">
+                    Learn More →
+                </button>
 
             </div>
-        </SwiperSlide>
 
-    </Swiper>
+        </div>
 
-</div>
 
+        <div className="w-[300px] border border-[#E8E8E8] shadow-sm">
+
+            <div className="relative h-[180px]">
+                <img
+                    src={post2}
+                    alt="Featured post"
+                    className="w-full h-full object-cover"
+                />
+
+                <span className="absolute top-3 left-3 bg-[#E74040] text-white text-[9px] font-bold px-2 py-1">
+                    NEW
+                </span>
+            </div>
+
+            <div className="flex flex-col gap-3 p-3">
+
+                <p className="text-[9px] text-[#8EC2F2]">
+                    Google&nbsp;&nbsp;&nbsp; Trending&nbsp;&nbsp;&nbsp; New
+                </p>
+
+                <h3 className="text-[#252B42] text-[13px] font-bold">
+                    Loudest à la Madison #1
+                    <br />
+                    (L'integral)
+                </h3>
+
+                <p className="text-[#737373] text-[9px] leading-4">
+                    We focus on ergonomics and meeting
+                    you where you work. It's only a
+                    keystroke away.
+                </p>
+
+                <div className="flex justify-between text-[8px] text-[#737373]">
+
+                    <span className="flex items-center gap-1">
+                        <img
+                            src={coolicon}
+                            alt=""
+                            className="w-[12px] h-[12px]"
+                        />
+                        22 April 2021
+                    </span>
+
+                    <span className="flex items-center gap-1">
+                        <img
+                            src={Vector}
+                            alt=""
+                            className="w-[12px] h-[12px]"
+                        />
+                        10 comments
+                    </span>
+
+                </div>
+
+                <button className="text-[#737373] text-[9px] font-bold text-left">
+                    Learn More →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div className="w-[300px] border border-[#E8E8E8] shadow-sm">
+
+            <div className="relative h-[180px]">
+                <img
+                    src={post3}
+                    alt="Featured post"
+                    className="w-full h-full object-cover"
+                />
+
+                <span className="absolute top-3 left-3 bg-[#E74040] text-white text-[9px] font-bold px-2 py-1">
+                    NEW
+                </span>
+            </div>
+
+            <div className="flex flex-col gap-3 p-3">
+
+                <p className="text-[9px] text-[#8EC2F2]">
+                    Google&nbsp;&nbsp;&nbsp; Trending&nbsp;&nbsp;&nbsp; New
+                </p>
+
+                <h3 className="text-[#252B42] text-[13px] font-bold">
+                    Loudest à la Madison #1
+                    <br />
+                    (L'integral)
+                </h3>
+
+                <p className="text-[#737373] text-[9px] leading-4">
+                    We focus on ergonomics and meeting
+                    you where you work. It's only a
+                    keystroke away.
+                </p>
+
+                <div className="flex justify-between text-[8px] text-[#737373]">
+
+                    <span className="flex items-center gap-1">
+                        <img
+                            src={coolicon}
+                            alt=""
+                            className="w-[12px] h-[12px]"
+                        />
+                        22 April 2021
+                    </span>
+
+                    <span className="flex items-center gap-1">
+                        <img
+                            src={Vector}
+                            alt=""
+                            className="w-[12px] h-[12px]"
+                        />
+                        10 comments
+                    </span>
+
+                </div>
+
+                <button className="text-[#737373] text-[9px] font-bold text-left">
+                    Learn More →
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section className="flex md:hidden flex-col items-center py-16">
+
+    <div className="flex flex-col items-center text-center gap-2 mb-8">
+
+        <p className="text-[#23A6F0] text-[8px] font-bold">
+            Practice Advice
+        </p>
+
+        <h2 className="text-[#252B42] text-[20px] leading-[24px] font-bold">
+            Featured Posts
+        </h2>
+
+        <p className="text-[#737373] text-[8px] leading-[12px] w-[250px]">
+            Problems trying to resolve the conflict between
+            the two major realms of Classical physics: Newtonian mechanics
+        </p>
+
+    </div>
+
+    <div className="flex flex-col gap-2">
+
+        <div className="w-[300px] border border-[#E8E8E8] shadow-sm">
+
+            <div className="relative h-[180px]">
+                <img
+                    src={post1}
+                    alt="Featured post"
+                    className="w-full h-full object-cover"
+                />
+
+                <span className="absolute top-3 left-3 bg-[#E74040] text-white text-[9px] font-bold px-2 py-1">
+                    NEW
+                </span>
+            </div>
+
+            <div className="flex flex-col gap-3 p-3">
+
+                <p className="text-[9px] text-[#8EC2F2]">
+                    Google&nbsp;&nbsp;&nbsp; Trending&nbsp;&nbsp;&nbsp; New
+                </p>
+
+                <h3 className="text-[#252B42] text-[13px] font-bold">
+                    Loudest à la Madison #1
+                    <br />
+                    (L'integral)
+                </h3>
+
+                <p className="text-[#737373] text-[9px] leading-4">
+                    We focus on ergonomics and meeting
+                    you where you work. It's only a
+                    keystroke away.
+                </p>
+
+                <div className="flex justify-between text-[8px] text-[#737373]">
+
+                    <span className="flex items-center gap-1">
+                        <img
+                            src={coolicon}
+                            alt=""
+                            className="w-[10px] h-[10px]"
+                        />
+                        22 April 2021
+                    </span>
+
+                    <span className="flex items-center gap-1">
+                        <img
+                            src={Vector}
+                            alt=""
+                            className="w-[10px] h-[10px]"
+                        />
+                        10 comments
+                    </span>
+
+                </div>
+
+                <button className="text-[#737373] text-[9px] font-bold text-left">
+                    Learn More →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div className="w-[300px] border border-[#E8E8E8] shadow-sm">
+
+            <div className="relative h-[180px]">
+                <img
+                    src={post2}
+                    alt="Featured post"
+                    className="w-full h-full object-cover"
+                />
+
+                <span className="absolute top-3 left-3 bg-[#E74040] text-white text-[9px] font-bold px-2 py-1">
+                    NEW
+                </span>
+            </div>
+
+            <div className="flex flex-col gap-3 p-3">
+
+                <p className="text-[9px] text-[#8EC2F2]">
+                    Google&nbsp;&nbsp;&nbsp; Trending&nbsp;&nbsp;&nbsp; New
+                </p>
+
+                <h3 className="text-[#252B42] text-[13px] font-bold">
+                    Loudest à la Madison #1
+                    <br />
+                    (L'integral)
+                </h3>
+
+                <p className="text-[#737373] text-[9px] leading-4">
+                    We focus on ergonomics and meeting
+                    you where you work. It's only a
+                    keystroke away.
+                </p>
+
+                <div className="flex justify-between text-[8px] text-[#737373]">
+
+                    <span className="flex items-center gap-1">
+                        <img
+                            src={coolicon}
+                            alt=""
+                            className="w-[10px] h-[10px]"
+                        />
+                        22 April 2021
+                    </span>
+
+                    <span className="flex items-center gap-1">
+                        <img
+                            src={Vector}
+                            alt=""
+                            className="w-[10px] h-[10px]"
+                        />
+                        10 comments
+                    </span>
+
+                </div>
+
+                <button className="text-[#737373] text-[9px] font-bold text-left">
+                    Learn More →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div className="w-[300px] border border-[#E8E8E8] shadow-sm">
+
+            <div className="relative h-[180px]">
+                <img
+                    src={post3}
+                    alt="Featured post"
+                    className="w-full h-full object-cover"
+                />
+
+                <span className="absolute top-3 left-3 bg-[#E74040] text-white text-[9px] font-bold px-2 py-1">
+                    NEW
+                </span>
+            </div>
+
+            <div className="flex flex-col gap-3 p-3">
+
+                <p className="text-[9px] text-[#8EC2F2]">
+                    Google&nbsp;&nbsp;&nbsp; Trending&nbsp;&nbsp;&nbsp; New
+                </p>
+
+                <h3 className="text-[#252B42] text-[13px] font-bold">
+                    Loudest à la Madison #1
+                    <br />
+                    (L'integral)
+                </h3>
+
+                <p className="text-[#737373] text-[9px] leading-4">
+                    We focus on ergonomics and meeting
+                    you where you work. It's only a
+                    keystroke away.
+                </p>
+
+                <div className="flex justify-between text-[8px] text-[#737373]">
+
+                    <span className="flex items-center gap-1">
+                        <img
+                            src={coolicon}
+                            alt=""
+                            className="w-[10px] h-[10px]"
+                        />
+                        22 April 2021
+                    </span>
+
+                    <span className="flex items-center gap-1">
+                        <img
+                            src={Vector}
+                            alt=""
+                            className="w-[10px] h-[10px]"
+                        />
+                        10 comments
+                    </span>
+
+                </div>
+
+                <button className="text-[#737373] text-[9px] font-bold text-left">
+                    Learn More →
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
         </>
     )
 }
