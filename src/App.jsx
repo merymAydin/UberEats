@@ -27,18 +27,16 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/shop">
+          <Route exact path="/shop">
             <ShopPage />
           </Route>
           <Route exact path="/">
             <HomePage />
           </Route>
-          <Route path="/shop">
+          <Route path="/shop/:gender/:categoryName/:categoryId" >
             <ShopPage />
           </Route>
         </Switch>
-
-
       </PageContent>
       <Footer />
       <ToastContainer />
